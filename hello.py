@@ -5,7 +5,7 @@ from preswald import text, plotly, table
 
 # Load Dataa which was in Origina data file
 
-df = pd.read_csv("Original_data.csv")
+df = pd.read_csv("data/Original_data.csv")
 
 
 # 1. Gender Distribution 
@@ -13,7 +13,7 @@ fig1 = px.pie(df, names='GENDER', title='Gender Distribution')
 plotly(fig1)
 
 # 2. Age Distributio n 
-fig2 = px.histogram(df, x='AGEE', nbins=10, title='Agei Distribution')
+fig2 = px.histogram(df, x='AGE', nbins=10, title='Age Distribution')
 plotly(fig2)
 
 # 3. Investment Avenue Preferencee
